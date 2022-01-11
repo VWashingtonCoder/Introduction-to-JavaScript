@@ -124,12 +124,12 @@ function hungryDog(lbsWeight, dogAge){
     }
   }
     else{
-    if (dogAge >= 2/12 && dogAge <= 4/12){
+    if (dogAge > 0.167 && dogAge < 0.333){
       return lbsWeight*.10;
-    } else if(dogAge >= 4/12 && dogAge <= 7/12){
+    } else if(dogAge > 0.333 && dogAge < 0.583){
       return lbsWeight*.05;
-    } else if(dogAge >= 7/12 && dogAge < 1){
-      return lbsWeight*.05;
+    } else if(dogAge >= 0.583 && dogAge < 1){
+      return lbsWeight*.04;
     }
   }
 }
@@ -240,9 +240,12 @@ Using the annoyingSong function below do the following:
     "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/){
-      /*add your code here*/
+function annoyingSong(){
+  
 }
+
+
+
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
