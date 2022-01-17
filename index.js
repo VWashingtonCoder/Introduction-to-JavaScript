@@ -288,11 +288,23 @@ HINT - you may need to study tomorrow's content on arrays
 HINT - try looking up the .includes() method
 */
 
-
-function vowelCounter(/*add your code here*/) {
-  /*add your code here*/
+//Completed Answer
+function vowelCounter(string) {
+  const lowercase = string.toLowerCase();
+  let vowelCount = 0;
+  let letters = lowercase.split('');
+  for (let i = 0; i < letters.length; i++){
+    if(letters[i] === 'a' || letters[i] === 'e' || letters[i] === 'i' || letters[i] === 'o'|| letters[i] === 'u'){
+      vowelCount++;
+    }
+  }
+  return vowelCount;
 }
 
+// Test Consoles
+// console.log(vowelCounter('A')) //Output_1
+// console.log(vowelCounter('AnEloind')) //Output_4
+// console.log(vowelCounter('Gotta Catch Em All')) //Output_5
 
 
 /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
